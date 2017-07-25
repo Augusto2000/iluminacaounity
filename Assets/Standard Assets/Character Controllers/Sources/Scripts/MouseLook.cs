@@ -30,11 +30,9 @@ public class MouseLook : MonoBehaviour {
 
 	float rotationY = 0F;
 
-
-
 	void Update ()
 	{
-
+	
 	if (Input.GetMouseButton(0)) {
 	if (axes == RotationAxes.MouseXAndY)
 		{
@@ -56,8 +54,6 @@ public class MouseLook : MonoBehaviour {
 			
 			transform.localEulerAngles = new Vector3(-rotationY, transform.localEulerAngles.y, 0);
 		}
-
-
 	}
 
 		
@@ -67,6 +63,6 @@ public class MouseLook : MonoBehaviour {
 	{
 		// Make the rigid body not change rotation
 		//if (rigidbody)
-		//	rigidbody.freezeRotation = true;
+			//rigidbody.freezeRotation = true;
 	}
 }
